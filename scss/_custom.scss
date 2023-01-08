@@ -1,9 +1,12 @@
 // CUSTOM COLORS
 $dark-blue: #00305c;
-$light-blue: #4dc6c7;
-$light-blue-200: #7BE0D6;
-$dark-background: #061c36;
 
+$light-blue: #4dc6c7;
+$light-blue-300: #07F7CC;
+$light-blue-400: #7BE0D6;
+
+$dark-background: #011121;
+$dark-background-2: #061c36;
 // defaults
 $primary:       $light-blue;
 $secondary:     $dark-blue;
@@ -11,18 +14,82 @@ $secondary:     $dark-blue;
 // $info:          $cyan;
 // $warning:       $yellow;
 // $danger:        $red;
-$light:         $light-blue-200;
+$light:         $light-blue-400;
 $dark:          $dark-background;
 
+body {
+  background-color: $dark-background;
+  background-image: linear-gradient(120deg, $dark-background 0%,$dark-background-2 100%) ;
+  height: 100%;
+}
+
+// NAVBAR STYLES
 .navbar-dark {
   .navbar-brand,
   .navbar-brand:hover,
   .navbar-brand:focus {
-  color: #4dc6c7;
+  color: $light-blue;
   font-family: 'Outfit', sans-serif;
   cursor: default;
   }
 }
+
+.navbar {
+  li {
+    a { color: $light-blue}
+    a:hover {color: goldenrod}
+  }
+  
+  .nav-link.active{
+    color: $dark-blue !important;
+  }
+}
+
+
+// MEDIA QUERIES
+$bp-tablet: 768px;
+
+@media (max-width: $bp-tablet) {
+  .navbar.navbar-expand-md {
+      background-color: #021723;
+      background-image: linear-gradient(90deg, #01090e 0%,#03254f 100%)
+  }
+  
+  .collapse.navbar-collapse .navbar-nav .nav-item:active {
+      background-color: #075e8a;
+      border:#4dc6c7 solid 1px;
+  } 
+}
+
+// SCROLLBARS
+
+/* Nice scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #00305c; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #31a6c3; 
+  }
+  
+  /* No scrollbar in mobile */
+  @media (max-width: $bp-tablet) {
+      ::-webkit-scrollbar {
+          width: 0px;
+      }
+  }
 
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
