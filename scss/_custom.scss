@@ -1,0 +1,29 @@
+// CUSTOM COLORS
+$dark-blue: #00305c;
+$light-blue: #4dc6c7;
+$light-blue-200: #7BE0D6;
+$dark-background: #061c36;
+
+// defaults
+$primary:       $light-blue;
+$secondary:     $dark-blue;
+// $success:       $green;
+// $info:          $cyan;
+// $warning:       $yellow;
+// $danger:        $red;
+$light:         $light-blue-200;
+$dark:          $dark-background;
+
+.navbar-dark {
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+  color: #4dc6c7;
+  font-family: 'Outfit', sans-serif;
+  cursor: default;
+  }
+}
+
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
