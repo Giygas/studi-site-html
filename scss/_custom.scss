@@ -7,18 +7,23 @@ $light-blue-400: #7BE0D6;
 
 $dark-background: #011121;
 $dark-background-2: #061c36;
-// defaults
+
 $primary:       $light-blue;
 $secondary:     $dark-blue;
-// $success:       $green;
-// $info:          $cyan;
-// $warning:       $yellow;
-// $danger:        $red;
+
 $light:         $light-blue-400;
 $dark:          $dark-background;
 
+// BREAKPOINT FOR TABLETS
 $bp-tablet: 768px;
+
+//NAVBAR RELATED
+$navbar-nav-link-padding-x: 0.8rem;
+
+// FONT FAMILY OF THE WHOLE DOCUMENTS
+$font-family-sans-serif: 'Outfit', 'system-ui', -apple-system;
 
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
 
+// https://www.youtube.com/shorts/4jZE6y-uGJQ

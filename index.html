@@ -10,16 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="First exam of the course Graduate Développeur Flutter in Studi">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700&display=swap" rel="stylesheet">
     <title>HTML, CSS and Bootstrap</title>
 </head>
 <body>
     
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
+        <!-- Possible to use sticky-top, but just using this one for compatibility -->
         <div class="container-md">
-            <span class="navbar-brand"><h1 class="display-3 fw-bold">ADIEU</h1></span>
-            
+            <span class="navbar-brand"><span class="display-3 fw-bold">ADIEU</span></span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
             aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +29,7 @@
             </button>
             
             <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center fs-5 gap-3 gap-md-0">
+                <ul class="navbar-nav text-center gap-3 gap-md-0">
                     <li class="nav-item">
                         <a href="/#top" class="nav-link active" aria-current="page">Accueil</a>
                     </li>
@@ -42,19 +44,41 @@
         </div>
     </nav>
     
-    <!-- INTRO  -->
-    <section id="intro">
+    <!-- INTRO  -->  
+    <section id="home" class="intro-section my-1 my-md-5">
         <div class="container-md my-5">
-            <h1>Association des Développeurs Informatique Étrangers Unis</h1>
-            <p>Ce site est fait par des programmeurs pour tous les programmeurs qui ont un peu de mal à s'adapter à la programmation à la française</p>
+            
+            <div class="row align-items-center text-center">
+                <div class="col">
+                    <h1 class="display-1">
+                      Association des Développeurs Informatiques Étrangers Unis
+                    </h1>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mt-md-5">
+                <div class="col-md-8 px-4 px-md-0">
+                    <span class="display-6">
+                        <p class="intro-description">
+                            Ce site est fait par des programmeurs pour tous les programmeurs qui 
+                            ont un peu de mal à s'adapter à la écriture de commentaires en français
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/images/screen.png" alt="Screen image"
+                    class="img-fluid image-content">
+                </div>
+            </div>
         </div>
     </section>
+    
     <!-- SECTION 1  -->
     <section style="height: 1500px;">
         
     </section>
     <!-- CONTACT -->
-    <section class="container-md" id="contact" style="background-color: aquamarine; height: 250px;">
+    <section class="container-md shadow-lg" id="contact" style="background-color: aquamarine; height: 10px;">
         
     </section>
     

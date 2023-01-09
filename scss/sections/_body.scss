@@ -5,32 +5,33 @@
 body {
     @include gradient;
     height: 100%;
-  }
+    color: $gray-500;
+}
   
-  /* Nice scrollbar */
-  /* width */
-  ::-webkit-scrollbar {
+/* Nice scrollbar */
+/* width */
+::-webkit-scrollbar {
     width: 10px;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #00305c; 
-    }
-    
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #31a6c3; 
+}
+
+/* No scrollbar in mobile */
+@media (max-width: $bp-tablet) {
+    ::-webkit-scrollbar {
+        width: 0px;
     }
-    
-    /* No scrollbar in mobile */
-    @media (max-width: $bp-tablet) {
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
-    }
+}

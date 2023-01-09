@@ -3,3 +3,9 @@
 @mixin gradient {
     background: linear-gradient(120deg, c.$dark-background 0%, c.$dark-background-2 100%) ;
 }
+
+@mixin description {
+    color: c.$gray-500;
+    text-align: justify;
+    line-height: 1.5em;
+}

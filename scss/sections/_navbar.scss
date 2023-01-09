@@ -5,9 +5,9 @@
     .navbar-brand,
     .navbar-brand:hover,
     .navbar-brand:focus {
-    color: c.$light-blue;
-    font-family: 'Outfit', sans-serif;
-    cursor: default;
+      color: c.$light-blue;
+      font-weight: 200;
+      cursor: default;
     }
   }
   
@@ -26,12 +26,17 @@
     }
   }
   
+  .collapse.navbar-collapse .navbar-nav .nav-item:active {
+      background-color: #075e8a;
+      border:#4dc6c7 solid 1px;
+  }
   
-  // MEDIA QUERIES  
-  @media (max-width: c.$bp-tablet) {
-    
+  // MEDIA QUERIES
+  // WILL BE BETTER TO JUST USE THE MEDIA QUERY AS MAX-WITH SO I CAN WRITE THIS 
+  // CODE ONLY 1 TIME, BUT, MOBILE FIRST
+  @media (min-width: c.$bp-tablet) {
     .collapse.navbar-collapse .navbar-nav .nav-item:active {
-        background-color: #075e8a;
-        border:#4dc6c7 solid 1px;
-    } 
+      background-color: transparent;
+      border: 0;
+    }
   }
