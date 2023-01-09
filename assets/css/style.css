@@ -529,24 +529,24 @@ progress {
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
-  line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
-}
-
-.display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .display-6 {
+  .display-5 {
     font-size: 2.5rem;
+  }
+}
+
+.display-6 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-6 {
+    font-size: 2rem;
   }
 }
 
@@ -10769,6 +10769,39 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes pulse-border {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*!
+ * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+:root, :host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
+}
+.far,
+.fa-regular {
+  font-weight: 400;
+}
+
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
@@ -10835,21 +10868,47 @@ body {
     width: 0px;
   }
 }
-.intro-section {
-  padding-top: 5rem;
+section {
+  width: 100%;
+  height: 100%;
 }
-.intro-section h1 {
+section.intro-section {
+  padding-top: 15vh;
+}
+section.intro-section .icon-box {
+  position: relative;
+}
+section.intro-section .icon-box a span i {
+  font-size: 4rem;
+  color: #4dc6c7;
+}
+section h1 {
   color: #4dc6c7;
   margin-bottom: 2rem;
 }
-.intro-section .intro-description {
+section h2 {
+  color: #4dc6c7;
+  text-transform: uppercase;
+}
+section .section-description {
   color: #adb5bd;
   text-align: justify;
   line-height: 1.5em;
 }
-.intro-section .image-content {
+section .image-content {
   display: block;
   margin: auto;
+}
+
+.wave-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border: 0.25rem solid #07F7CC;
+  border-radius: 50%;
+  animation: pulse-border 4s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

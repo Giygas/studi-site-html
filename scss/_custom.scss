@@ -23,7 +23,17 @@ $navbar-nav-link-padding-x: 0.8rem;
 // FONT FAMILY OF THE WHOLE DOCUMENTS
 $font-family-sans-serif: 'Outfit', 'system-ui', -apple-system;
 
+//CHANGING DISPLAY SIZES
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 2.5rem,
+  6: 2rem
+);
+
 // IMPORT BOOTSTRAP 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // https://www.youtube.com/shorts/4jZE6y-uGJQ

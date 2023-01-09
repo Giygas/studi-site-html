@@ -1,0 +1,65 @@
+@use '../custom' as c;
+@use '../components/mixins' as mix;
+
+section {
+    width: 100%;
+    height: 100%;
+    
+    &.intro-section {
+        padding-top: 15vh;
+        
+        .icon-box {
+            position: relative;
+            
+            a {
+                // @include mix.absolute-center;
+                span {
+                    
+                    i {
+                        font-size: 4rem;
+                        color: c.$primary;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
+    
+    h1 {
+        color: c.$primary;
+        margin-bottom: 2rem;
+    }
+    
+    h2 {
+        color: c.$primary;
+        text-transform: uppercase;
+    }
+    
+    .section-description { 
+        color: c.$gray-500;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+    
+    .image-content {
+        display: block;
+        margin:auto;
+    }
+    
+    
+    
+}
+
+.wave-animation {
+    // @include mix.absolute-center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    border: 0.25rem solid c.$light-blue-300;
+    border-radius: 50%;
+    animation: pulse-border 4s linear infinite;
+}

@@ -2,8 +2,12 @@
 
 // COMPONENTS
 @use 'components/mixins';
+@use 'components/animations';
+
+// FONTAWESOME
+@use "fontawesome/regular";
 
 // IMPORT THE SECTIONS
 @use 'sections/navbar';
 @use 'sections/body';
-@use 'sections/intro';
+@use 'sections/section';
