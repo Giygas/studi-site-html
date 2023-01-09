@@ -1,0 +1,37 @@
+@use '../custom' as c;
+@use '../components/mixins' as mix;
+
+.navbar-dark {
+    .navbar-brand,
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+    color: c.$light-blue;
+    font-family: 'Outfit', sans-serif;
+    cursor: default;
+    }
+  }
+  
+  .navbar.navbar-expand-md {
+      @include mix.gradient;
+  }
+  
+  .navbar {
+    li {
+      a { color: c.$light-blue}
+      a:hover {color: goldenrod}
+    }
+    
+    .nav-link.active{
+      color: c.$dark-blue !important;
+    }
+  }
+  
+  
+  // MEDIA QUERIES  
+  @media (max-width: c.$bp-tablet) {
+    
+    .collapse.navbar-collapse .navbar-nav .nav-item:active {
+        background-color: #075e8a;
+        border:#4dc6c7 solid 1px;
+    } 
+  }

@@ -1,1 +1,8 @@
 @use 'custom';
+
+// COMPONENTS
+@use 'components/mixins';
+
+// IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/body';
