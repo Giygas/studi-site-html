@@ -10882,6 +10882,16 @@ section.intro-section .icon-box a span i {
   font-size: 4rem;
   color: #4dc6c7;
 }
+section.intro-section .icon-box .wave-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border: 0.25rem solid #07F7CC;
+  border-radius: 50%;
+  animation: pulse-border 4s linear infinite;
+}
 section h1 {
   color: #4dc6c7;
   margin-bottom: 2rem;
@@ -10898,17 +10908,6 @@ section .section-description {
 section .image-content {
   display: block;
   margin: auto;
-}
-
-.wave-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4rem;
-  height: 4rem;
-  border: 0.25rem solid #07F7CC;
-  border-radius: 50%;
-  animation: pulse-border 4s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
