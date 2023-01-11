@@ -12,7 +12,7 @@ section {
             position: relative;
             
             a {
-                // @include mix.absolute-center;
+
                 span {
                     
                     i {
@@ -22,6 +22,17 @@ section {
                     
                 }
                 
+            }
+            
+            .wave-animation {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4rem;
+                height: 4rem;
+                border: 0.25rem solid c.$light-blue-300;
+                border-radius: 50%;
+                animation: pulse-border 4s linear infinite;
             }
             
         }
@@ -50,16 +61,4 @@ section {
     
     
     
-}
-
-.wave-animation {
-    // @include mix.absolute-center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4rem;
-    height: 4rem;
-    border: 0.25rem solid c.$light-blue-300;
-    border-radius: 50%;
-    animation: pulse-border 4s linear infinite;
 }
