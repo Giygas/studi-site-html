@@ -19098,21 +19098,24 @@ html, body {
     width: 0px;
   }
 }
-section {
+.section {
   width: 100%;
   height: 100%;
 }
-section.intro-section {
+.section-calendar {
+  min-height: 100vh;
+}
+.section.intro-section {
   padding-top: 15vh;
 }
-section.intro-section .icon-box {
+.section.intro-section .icon-box {
   position: relative;
 }
-section.intro-section .icon-box a span i {
+.section.intro-section .icon-box a span i {
   font-size: 4rem;
   color: #4dc6c7;
 }
-section.intro-section .icon-box .wave-animation {
+.section.intro-section .icon-box .wave-animation {
   position: absolute;
   top: 0;
   left: 0;
@@ -19122,27 +19125,27 @@ section.intro-section .icon-box .wave-animation {
   border-radius: 50%;
   animation: pulse-border 2s linear infinite;
 }
-section.intro-section .icon-box .wave-animation--2 {
+.section.intro-section .icon-box .wave-animation--2 {
   animation-delay: 1s;
 }
-section h1 {
+.section h1 {
   color: #4dc6c7;
   margin-bottom: 2rem;
 }
-section h2 {
+.section h2 {
   color: #4dc6c7;
   text-transform: uppercase;
 }
-section .section-description {
+.section .section-description {
   color: #adb5bd;
   text-align: justify;
   line-height: 1.5em;
 }
-section .image-content {
+.section .image-content {
   display: block;
   margin: auto;
 }
-section .next-date {
+.section .next-date {
   background-color: rgba(0, 48, 92, 0.4666666667);
 }
 
