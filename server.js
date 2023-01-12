@@ -1,11 +1,13 @@
-var http = require('http');
+var express = require('express');
 
-var nState = require('node-static');
+var app = express();
 
-var fileServer = new nState.Server('.');
+app.use(express.static('public'));
 
-http.createServer(function(req, res) {
-  
-  fileServer.serve(req,res);
-  
-}).listen(5000);
+app.use('/assets', express.static(__dirname + 'public/assets'));
+
+
+var server = app.listen(8081, function() {
+  var port = server.address().port;
+  console.log('Sever started at http://localhost:%s', port);
+});
