@@ -19133,6 +19133,10 @@ html, body {
   color: #4dc6c7;
   text-transform: uppercase;
 }
+.section a {
+  text-decoration: none;
+  color: #e9ecef;
+}
 .section .section-description {
   color: #adb5bd;
   text-align: justify;

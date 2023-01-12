@@ -52,6 +52,11 @@
         text-transform: uppercase;
     }
     
+    a {
+        text-decoration: none;
+        color: c.$gray-200;
+    }
+    
     .section-description { 
         color: c.$gray-500;
         text-align: justify;
