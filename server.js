@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var compression = require('compression')
 var express = require('express');
 
