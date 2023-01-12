@@ -5,9 +5,9 @@ var express = require('express');
 
 var app = express();
 
-app.use(compression);
 
 app.use(express.static('public'));
+app.use(compression);
 
 app.use('/assets', express.static(__dirname + 'public/assets'));
 
