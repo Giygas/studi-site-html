@@ -75,13 +75,23 @@
         
         button {
             
-            div > span{
+            div {
                 
-                &.description { 
-                    color: c.$gray-500 !important;
-                    margin-left: 10vw;
-                    font-weight: 300;
+                span { 
+                    
+                    font-weight:300;
                 }
+                
+            }
+        }
+        
+        .accordion-body {
+            
+            p {
+                color: c.$gray-200;
+                font-weight: 300;
+                text-align: justify;
+                margin-bottom: 4vh;
             }
         }
     }
