@@ -4289,28 +4289,28 @@ textarea.form-control-lg {
 }
 
 .accordion {
-  --bs-accordion-color: #212529;
-  --bs-accordion-bg: #fff;
+  --bs-accordion-color: #7BE0D6;
+  --bs-accordion-bg: #011121;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-color: rgba(1, 17, 33, 0.125);
   --bs-accordion-border-width: 1px;
   --bs-accordion-border-radius: 0.375rem;
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #212529;
+  --bs-accordion-btn-padding-y: 2.25rem;
+  --bs-accordion-btn-color: #7BE0D6;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237BE0D6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2345b2b3'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2300305c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #a6e3e3;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(77, 198, 199, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
-  --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #45b2b3;
-  --bs-accordion-active-bg: #edf9f9;
+  --bs-accordion-body-padding-y: 2.25rem;
+  --bs-accordion-active-color: #00305c;
+  --bs-accordion-active-bg: #4dc6c7;
 }
 
 .accordion-button {
@@ -19063,9 +19063,11 @@ readers do not read off random characters that represent icons */
     border: 0;
   }
 }
-body {
+html, body {
   background: linear-gradient(120deg, #011121 0%, #061c36 100%);
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   color: #adb5bd;
 }
 
@@ -19099,6 +19101,7 @@ body {
 section {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
 }
 section.intro-section {
   padding-top: 15vh;
