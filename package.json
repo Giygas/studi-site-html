@@ -2,7 +2,7 @@
   "name": "studi-site-html",
   "version": "1.0.0",
   "description": "Prémier examen studi, Créer un site web avec HTML, CSS et Bootstrap",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
     "compile:sass": "sass --watch scss:public/assets/css",
     "start": "node server.js"
