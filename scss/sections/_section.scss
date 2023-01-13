@@ -101,6 +101,21 @@
     
     &-contact {
         min-height: 100vh;
+        
+        // This one is better to start seeing the full form
+        // page in large screens
+        @media (min-width: 992px) {
+            .contact-form {
+                background-color: c.$dark;
+                border-radius: 20px;
+                -webkit-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+-moz-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+                padding: 5vh 12vh; 
+                margin: 0 20vh;
+            }
+            
+        }
     }
     
 }
