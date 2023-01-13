@@ -19065,12 +19065,31 @@ readers do not read off random characters that represent icons */
     border: 0;
   }
 }
+.navbar {
+  /*   z-index should be above .close-navbar-toggler */
+  z-index: 2;
+}
+
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+
 html, body {
   background: linear-gradient(120deg, #011121 0%, #061c36 100%);
   margin: 0;
   padding: 0;
   min-height: 100vh;
   color: #adb5bd;
+  position: relative;
 }
 
 /* Nice scrollbar */

@@ -2,7 +2,6 @@
 <!-- 
     Évaluation d'entraînement - Créer un site web avec HTML, CSS et le Framework Bootstrap
     Autor: Gustavo Rossich, 2023
-    #TODO close the navmenu when clicking a link
 -->
 <html lang="fr">
 <head>
@@ -26,6 +25,9 @@
 <body>
     
     <!-- NAVBAR -->
+    <!-- LINK FOR CLOSING THE NAVBAR WHEN CLICKING OUTSIDE IT -->
+    <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
         <!-- Possible to use sticky-top, but just using this one for compatibility -->
         <div class="container-md">

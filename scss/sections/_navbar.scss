@@ -16,6 +16,7 @@
   }
   
   .navbar {
+    
     li {
       a { color: c.$light-blue}
       a:hover {color: goldenrod}
@@ -40,3 +41,24 @@
       border: 0;
     }
   }
+  
+  // FOR CLOSING WHEN CLICKING OUTSIDE THE MENU IN MOBILE
+  .navbar{
+    /*   z-index should be above .close-navbar-toggler */
+      z-index:2;
+  }
+  
+  .close-navbar-toggler{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+    cursor:pointer;
+    
+    &.collapsed{
+      z-index:-1;
+    }
+  }
+  
