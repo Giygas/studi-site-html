@@ -19161,5 +19161,8 @@ html, body {
   text-align: justify;
   margin-bottom: 4vh;
 }
+.section-contact {
+  min-height: 100vh;
+}
 
 /*# sourceMappingURL=style.css.map */
