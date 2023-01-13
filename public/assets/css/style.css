@@ -19160,8 +19160,11 @@ html, body {
 }
 .section .section-description {
   color: #adb5bd;
-  text-align: justify;
   line-height: 1.5em;
+  margin-bottom: 3vh;
+}
+.section .section-description.display-6 {
+  color: #e9ecef;
 }
 .section .image-content {
   display: block;

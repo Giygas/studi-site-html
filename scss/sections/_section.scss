@@ -59,8 +59,13 @@
     
     .section-description { 
         color: c.$gray-500;
-        text-align: justify;
+        // text-align: justify;
         line-height: 1.5em;
+        margin-bottom: 3vh;
+        
+        &.display-6 {
+            color: c.$gray-200;
+        }
     }
     
     .image-content {
