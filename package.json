@@ -2,9 +2,10 @@
   "name": "studi-site-html",
   "version": "1.0.0",
   "description": "Prémier examen studi, Créer un site web avec HTML, CSS et Bootstrap",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "compile:sass": "sass --watch scss:public/assets/css",
+    "start": "node server.js"
   },
   "keywords": [
     "studi",
@@ -17,11 +18,13 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
     "autoprefixer": "^10.4.13",
+    "glightbox": "^3.2.0",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.57.1",
-    "glightbox": "^3.2.0"
+    "sass": "^1.57.1"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "compression": "^1.7.4",
+    "express": "^4.18.2"
   }
 }

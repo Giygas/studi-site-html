@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- 
+    Évaluation d'entraînement - Créer un site web avec HTML, CSS et le Framework Bootstrap
+    Autor: Gustavo Rossich, 2023
+    #TODO close the navmenu when clicking a link
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First exam of the course Graduate Développeur Flutter in Studi">
+    
+    <!-- STYLESHEETS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    
+    <link rel="canonical" href="https://adieu.up.railway.app/"/>
+    
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700&display=swap" rel="stylesheet">
+    <title>HTML, CSS and Bootstrap</title>
+    
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
+        <!-- Possible to use sticky-top, but just using this one for compatibility -->
+        <div class="container-md">
+            <span class="navbar-brand"><span class="display-3 fw-bold">ADIEU</span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center gap-3 gap-md-0">
+                    <li class="nav-item">
+                        <a href="/#top" class="nav-link" >Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#contact" class="nav-link">Contactez-Nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="calendrier.html#top" class="nav-link active" aria-current="page">Prochains Événements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- CALENDAR  -->
+    <section id="calendar" class="section section-calendar pt-4 pt-md-5">
+        <div class="container-md py-5 mt-5">
+            <h1 class="display-1 my-md-5 text-uppercase text-center">Nos prochains activités</h1>
+            <div class="accordion pt-3 pt-md-5" id="accordionExample">
+                
+                <!-- FIRST ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button collapsed align-items-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="container-fluid">
+                                <div class="row align-items-baseline">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Mercredi 1 février</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span>Atelier Developpement d'une Intelligence Artificielle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                        <div class="accordion-body px-5">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Developpement d'une Intelligence Artificielle
+                            </h3>
+                            <p>
+                                Dans cette atelier nous allons apprendre comment developper une intelligence artificielle
+                            </p>
+                            <p>
+                                Rendez vous chez nous avec votre ordinateur portable à partir de
+                                9h00 le mercredi 1er février pour commencer le <i><b>process</b></i>
+                            </p>
+                            <p>
+                                Pour plus d'information: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quos sit temporibus modi enim, optio corrupti exercitationem cum architecto consectetur labore iusto. Dicta officia amet officiis obcaecati deleniti et quam magni non odit sed recusandae exercitationem, quasi asperiores beatae nam ipsum. Consequuntur ea error quidem? Quibusdam deserunt omnis id inventore accusantium voluptatum blanditiis, odio voluptas iste consequuntur! Ipsam a iste natus vel, quam non rem aperiam voluptate provident minima dolor voluptates repellendus ex repellat. Non illum assumenda quaerat aperiam unde doloremque molestiae magni porro at sapiente, eaque veniam dolorem enim neque laudantium! Hic veritatis itaque fugiat impedit corrupti dolor! Voluptate!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SECOND ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="container-fluid">
+                                <div class="row align-items-baseline">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Mercredi 15 février</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center">
+                                        <span>Atelier comment entraîner une intelligence artificielle à la reconnaissance de photos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Entraîner une intelligence artificielle à reconnaître des photos de personnes
+                            </h3>
+                            <p>
+                                Ici, nous allons apprendre à former une intelligence artificielle pour reconnaître les photos de personnes et catégoriser si elles font quelque chose d'illégal ou non.
+                            </p>
+                            <p>
+                                Rendez vous chez nous comme la dernière fois avec votre ordinateur portable à partir de
+                                9h00 le mercredi 15 février pour continuer le <i><b>process</b></i>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- THIRD ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="container-fluid">
+                                <div class="row align-items-baseline">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Vendredi 17 mars</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span class="fw-light">Pique-Nique pour les membres de l'association</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Petit pique-nique des membres de l'association
+                            </h3>
+                            <p>
+                                Pas de programmation ce jour, nous préparons un pique-nique pour les membres de l'association pour se détendre et réfléchir au <i><b>process</b></i> (d'apprentissage)
+                            </p>
+                            <p>
+                                Nous nous réunirons près de l'église abandonnée à côté de l'arbre étrange où les gens ont disparu. Mais on y a pensé, on y va le vendredi 17 mars au matin à 9h00 comme toujours, donc pas de soucis
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FORTH ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="container-fluid">
+                                <div class="row align-items-baseline">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Lundi 1 mai</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span class="fw-light">Préparation au cas où pour la prise de pouvoir des machines sur l'humanité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Préparation à l'apocalypse
+                            </h3>
+                            <p>
+                                Nous avons vu récemment que l'intelligence artificielle que Gilfoyle a développée est capable de déchiffrer chaque norme de codification existante, et nous ne pouvons pas l'empêcher de se répliquer dans d'autres systèmes, nous avons donc découvert qu'il y avait une petite chance que nous puissions ne pas pouvoir l'arrêter.
+                            </p>
+                            <p>
+                                Donc, juste au cas où, avec la possibilité hyper minuscule que cela signifie la fin de l'humanité, nous donnons juste quelques conseils pour se préparer à nos nouveaux suzerains et quelques beaux endroits où se cacher. Mais tout cela n'est que théorique, donc pas de vrais soucis hé
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- NO MORE ITEMS -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="mailto:gustavorossich@gmail.com">Gustavo Rossich</a>
+        </div>
+      </footer>
+    <!-- SCRIPTS -->
+    <script src="assets/glightbox/js/glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
