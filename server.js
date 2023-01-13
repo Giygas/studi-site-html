@@ -5,12 +5,12 @@ var express = require('express');
 
 var app = express();
 
+app.use(compression());
 
 app.use(express.static('public'));
 
 app.use('/assets', express.static(__dirname + 'public/assets'));
 
-app.use(compression);
 
 
 var server = app.listen(8081, function() {
