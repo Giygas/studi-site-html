@@ -1987,6 +1987,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
+  font-family: SF Pro;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2130,6 +2131,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
+  font-family: SF Pro;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2728,7 +2730,7 @@ textarea.form-control-lg {
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: SF Pro;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -19160,6 +19162,20 @@ html, body {
   font-weight: 300;
   text-align: justify;
   margin-bottom: 4vh;
+}
+.section-contact {
+  min-height: 100vh;
+}
+@media (min-width: 992px) {
+  .section-contact .contact-form {
+    background-color: #011121;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+    -moz-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+    box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+    padding: 5vh 12vh;
+    margin: 0 20vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+    Évaluation d'entraînement - Créer un site web avec HTML, CSS et le Framework Bootstrap
+    Autor: Gustavo Rossich, 2023
+    #TODO close the navmenu when clicking a link
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First exam of the course Graduate Développeur Flutter in Studi">
+    
+    <!-- STYLESHEETS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    
+    <link rel="canonical" href="https://adieu.up.railway.app/"/>
+    
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700&display=swap" rel="stylesheet">
+    <title>HTML, CSS and Bootstrap</title>
+    
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
+        <!-- Possible to use sticky-top, but just using this one for compatibility -->
+        <div class="container-md">
+            <span class="navbar-brand"><span class="display-3 fw-bold">ADIEU</span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center gap-3 gap-md-0">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" >Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link active" aria-current="page">Contactez-Nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="calendrier.html" class="nav-link">Prochains Événements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- CONTACT FORM  -->
+    <section id="contact-form" class="section section-contact pt-4 pt-md-5">
+        <div class="container-fluid py-5 mt-5 px-0 px-md-5">
+            <h1 class="display-1 my-md-5 text-uppercase text-center">Contactez-Nous</h1>
+            <div class="contact-form justify-content-center">
+                <form class="p-3 p-md-5">
+                    <!-- NAME -->
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <!-- TEXTAREA -->
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="6"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary me-0">Submit</button>
+                        
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="mailto:gustavorossich@gmail.com">Gustavo Rossich</a>
+        </div>
+      </footer>
+    <!-- SCRIPTS -->
+    <script src="assets/glightbox/js/glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
