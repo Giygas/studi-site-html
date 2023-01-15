@@ -19201,4 +19201,53 @@ html, body {
   }
 }
 
+footer {
+  color: #e9ecef;
+}
+footer a {
+  text-decoration: none;
+  margin: 5px 15px;
+}
+footer a:hover {
+  color: goldenrod;
+}
+footer .footer-container {
+  margin-top: 5vh;
+  padding-top: 5vh;
+  background-color: #011121;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+  -moz-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+  box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
+}
+footer .footer-container .share {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+}
+
+@media (max-width: 530px) {
+  footer .share {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer .share a {
+    margin-top: 1vh;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer-container {
+    text-align: left;
+  }
+  footer .footer-container .share {
+    justify-content: end;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
