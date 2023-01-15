@@ -1,0 +1,15 @@
+@use 'custom';
+
+// COMPONENTS
+@use 'components/mixins';
+@use 'components/animations';
+
+// FONTAWESOME
+@use "fontawesome/fontawesome";
+@use "fontawesome/regular";
+
+// IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/body';
+@use 'sections/section';
+@use 'sections/footer';

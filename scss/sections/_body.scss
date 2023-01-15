@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+// BASIC BODY STYLING
+html, body {
+    @include gradient;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: $gray-500;
+    position: relative;
+}
+  
+/* Nice scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00305c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #31a6c3; 
+}
+
+/* No scrollbar in mobile */
+@media (max-width: $bp-tablet) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}

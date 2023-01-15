@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- 
+    Évaluation d'entraînement - Créer un site web avec HTML, CSS et le Framework Bootstrap
+    Autor: Gustavo Rossich, 2023
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STYLESHEETS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    
+    <link rel="canonical" href="https://adieu.up.railway.app/"/>
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700&display=swap" rel="stylesheet">
+    
+    <!-- SOCIAL MEDIA META TAGS -->
+    <!-- MAIN META TAGS  -->
+    <meta name="description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://adieu.up.railway.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Association des Développeurs Informatiques Étrangers Unis">
+    <meta property="og:description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    <meta property="og:image" content="https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="adieu.up.railway.app">
+    <meta property="twitter:url" content="https://adieu.up.railway.app/">
+    <meta name="twitter:title" content="Association des Développeurs Informatiques Étrangers Unis">
+    <meta name="twitter:description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    
+    <title>Prochains Événements</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <!-- LINK FOR CLOSING THE NAVBAR WHEN CLICKING OUTSIDE IT -->
+    <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
+        <!-- Possible to use sticky-top, but just using this one for compatibility -->
+        <div class="container-md">
+            <a href="/" class="navbar-brand"><span class="display-3 fw-bold">ADIEU</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center gap-3 gap-md-0">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" >Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contactez-Nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link active" aria-current="page">Prochains Événements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- CALENDAR  -->
+    <section id="calendar" class="section section-calendar pt-4 pt-md-5">
+        <div class="container-md py-5 mt-5">
+            <h1 class="display-1 my-md-5 text-uppercase text-center">Nos prochains activités</h1>
+            <div class="accordion pt-3 pt-md-5" id="accordionExample">
+                
+                <!-- FIRST ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button collapsed align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Mercredi 1 février</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span>Atelier Developpement d'une Intelligence Artificielle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                        <div class="accordion-body px-5">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Developpement d'une Intelligence Artificielle
+                            </h3>
+                            <p>
+                                Dans cette atelier nous allons apprendre comment developper une intelligence artificielle
+                            </p>
+                            <p>
+                                Rendez vous chez nous avec votre ordinateur portable à partir de
+                                9h00 le mercredi 1er février pour commencer le <i><b>process</b></i>
+                            </p>
+                            <p>
+                                Pour plus d'information: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SECOND ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Mercredi 15 février</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center">
+                                        <span>Atelier comment entraîner une intelligence artificielle à la reconnaissance de photos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Entraîner une intelligence artificielle à reconnaître des photos de personnes
+                            </h3>
+                            <p>
+                                Ici, nous allons apprendre à former une intelligence artificielle pour reconnaître les photos de personnes et catégoriser si elles font quelque chose d'illégal ou non.
+                            </p>
+                            <p>
+                                Rendez vous chez nous comme la dernière fois avec votre ordinateur portable à partir de
+                                9h00 le mercredi 15 février pour continuer le <i><b>process</b></i>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- THIRD ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Vendredi 17 mars</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span class="fw-light">Pique-Nique pour les membres de l'association</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Petit pique-nique des membres de l'association
+                            </h3>
+                            <p>
+                                Pas de programmation ce jour, nous préparons un pique-nique pour les membres de l'association pour se détendre et réfléchir au <i><b>process</b></i> (d'apprentissage)
+                            </p>
+                            <p>
+                                Nous nous réunirons près de l'église abandonnée à côté de l'arbre étrange où les gens ont disparu. Mais on y a pensé, on y va le vendredi 17 mars au matin à 9h00 comme toujours, donc pas de soucis
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum odit blanditiis voluptatibus fugit. Sit iste, odio tempore reprehenderit facere itaque ullam, recusandae at consequuntur atque molestiae a, vitae esse! Nihil, eveniet. Atque, modi placeat veritatis commodi explicabo ab dolorem nobis dicta omnis fuga iure cum quis consectetur dolores. Labore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FOURTH ITEM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 text-center">
+                                        <span class="display-5 ps-3">Lundi 1 mai</span>
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center ">
+                                        <span class="fw-light">Préparation au cas où pour la prise de pouvoir des machines sur l'humanité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            <h3 class="mt-2 mb-5 display-4 text-center">
+                                Préparation à l'apocalypse
+                            </h3>
+                            <p>
+                                Nous avons vu récemment que l'intelligence artificielle que Gilfoyle a développée est capable de déchiffrer chaque norme de codification existante, et nous ne pouvons pas l'empêcher de se répliquer dans d'autres systèmes, nous avons donc découvert qu'il y avait une petite chance que nous puissions ne pas pouvoir l'arrêter.
+                            </p>
+                            <p>
+                                Donc, juste au cas où, avec la possibilité hyper minuscule que cela signifie la fin de l'humanité, nous donnons juste quelques conseils pour se préparer à nos nouveaux suzerains et quelques beaux endroits où se cacher. Mais tout cela n'est que théorique, donc pas de vrais soucis hé
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- NO MORE ITEMS -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-wrapper" class="container-fluid footer-container">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-4 ps-0 ps-lg-5">
+                        <span class="display-5 fw-bold text-uppercase">
+                            ADIEU
+                        </span>
+                        <p>
+                            Association des Développeurs 
+                            Informatiques Étrangers Unis
+                        </p>
+                    </div>
+                    <div class="col-lg-8 share">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://adieu.up.railway.app/" target="_blank">Share on Facebook</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://adieu.up.railway.app/&text=Check%20out%20this%20website!" target="_blank">Share on Twitter</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://adieu.up.railway.app/" target="_blank">Share on LinkedIn</a>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="row copyright text-center align-items-center">
+                    <div class="col">
+                        © 2023 Copyright:
+                        <a class="text-white" href="mailto:gustavorossich@gmail.com">
+                            Gustavo Rossich
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="assets/glightbox/js/glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

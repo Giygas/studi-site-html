@@ -1,0 +1,52 @@
+// CUSTOM COLORS
+$dark-blue: #00305c;
+
+$light-blue: #4dc6c7;
+$light-blue-300: #07F7CC;
+$light-blue-400: #7BE0D6;
+
+$dark-background: #011121;
+$dark-background-2: #061c36;
+
+$primary:       $light-blue;
+$secondary:     $dark-blue;
+
+$light:         $light-blue-400;
+$dark:          $dark-background;
+
+// BREAKPOINT FOR TABLETS
+$bp-tablet: 768px;
+
+//NAVBAR RELATED
+$navbar-nav-link-padding-x: 0.8rem;
+
+// FONT FAMILY OF THE WHOLE DOCUMENTS
+$font-family-sans-serif: 'Outfit', 'system-ui', -apple-system;
+
+//CHANGING DISPLAY SIZES
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 2.5rem,
+  6: 2rem
+);
+
+// ACCORDION
+$accordion-color: $light;
+$accordion-bg: $dark;
+$accordion-border-color: rgba($dark, .125);
+$accordion-padding-y: 2.25rem;
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: $secondary;
+
+$accordion-icon-transform: rotate(-360deg);
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$light}'><path fill-rule='evenodd' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$dark}'><path fill-rule='evenodd' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z'/></svg>");
+
+
+$input-btn-font-family: "Outfit";
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

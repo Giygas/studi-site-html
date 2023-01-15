@@ -1,0 +1,64 @@
+@use '../custom' as c;
+@use '../components/mixins' as mix;
+
+.navbar-dark {
+    .navbar-brand,
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+      color: c.$light-blue-300;
+      font-weight: 200;
+      cursor: default;
+    }
+  }
+  
+  .navbar.navbar-expand-md {
+      @include mix.gradient;
+  }
+  
+  .navbar {
+    
+    li {
+      a { color: c.$light-blue}
+      a:hover {color: goldenrod}
+    }
+    
+    .nav-link.active{
+      color: c.$dark-blue !important;
+    }
+  }
+  
+  .collapse.navbar-collapse .navbar-nav .nav-item:active {
+      background-color: #075e8a;
+      border:#4dc6c7 solid 1px;
+  }
+  
+  // MEDIA QUERIES
+  // WILL BE BETTER TO JUST USE THE MEDIA QUERY AS MAX-WITH SO I CAN WRITE THIS 
+  // CODE ONLY 1 TIME, BUT, MOBILE FIRST
+  @media (min-width: c.$bp-tablet) {
+    .collapse.navbar-collapse .navbar-nav .nav-item:active {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+  
+  // FOR CLOSING WHEN CLICKING OUTSIDE THE MENU IN MOBILE
+  .navbar{
+    /*   z-index should be above .close-navbar-toggler */
+      z-index:2;
+  }
+  
+  .close-navbar-toggler{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+    cursor:pointer;
+    
+    &.collapsed{
+      z-index:-1;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+@use '../custom' as c;
+@use '../components/mixins' as mix;
+
+.section {
+    width: 100%;
+    height: 100%;
+    
+    &.intro-section {
+        padding-top: 15vh;
+        
+        .icon-box {
+            position: relative;
+            
+            a {
+
+                span {
+                    
+                    i {
+                        font-size: 4rem;
+                        color: c.$primary;
+                    }
+                    
+                }
+                
+            }
+            
+            .wave-animation {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4rem;
+                height: 4rem;
+                border: 0.25rem solid c.$light-blue-300;
+                border-radius: 50%;
+                animation: pulse-border 2s linear infinite;
+                
+                &--2 {
+                    animation-delay: 1s;
+                }
+            }
+            
+        }
+    }
+    
+    h1 {
+        color: c.$primary;
+        margin-bottom: 2rem;
+    }
+    
+    h2 {
+        color: c.$primary;
+        text-transform: uppercase;
+    }
+    
+    a {
+        text-decoration: none;
+        color: c.$gray-200;
+    }
+    
+    .section-description { 
+        color: c.$gray-500;
+        // text-align: justify;
+        line-height: 1.5em;
+        margin-bottom: 3vh;
+        
+        &.display-6 {
+            color: c.$gray-200;
+        }
+    }
+    
+    .image-content {
+        display: block;
+        margin:auto;
+    }
+    
+    .next-date {
+        background-color: #00305c77;
+    }
+    
+    // CALENDAR RELATED
+    &-calendar {
+        min-height: 100vh;
+        
+        button {
+            
+            div {
+                
+                span { 
+                    
+                    font-weight:300;
+                }
+                
+            }
+        }
+        
+        .accordion-body {
+            
+            p {
+                color: c.$gray-200;
+                font-weight: 300;
+                text-align: justify;
+                font-size: 1.5rem;
+                margin-bottom: 4vh;
+            }
+        }
+    }
+    
+    &-contact {
+        min-height: 100vh;
+        
+        // This one is better to start seeing the full form
+        // page in large screens
+        @media (min-width: 992px) {
+            .contact-form {
+                background-color: c.$dark;
+                border-radius: 20px;
+                -webkit-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+                -moz-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+                box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
+                padding: 5vh 12vh; 
+                margin: 0 20vh;
+            }
+            
+        }
+    }
+    
+}

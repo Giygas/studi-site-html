@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- 
+    Évaluation d'entraînement - Créer un site web avec HTML, CSS et le Framework Bootstrap
+    Autor: Gustavo Rossich, 2023
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STYLESHEETS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    
+    <link rel="canonical" href="https://adieu.up.railway.app/"/>
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;500;700&display=swap" rel="stylesheet">
+    
+    <!-- SOCIAL MEDIA META TAGS -->
+    <!-- MAIN META TAGS  -->
+    <meta name="description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://adieu.up.railway.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Association des Développeurs Informatiques Étrangers Unis">
+    <meta property="og:description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    <meta property="og:image" content="https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="adieu.up.railway.app">
+    <meta property="twitter:url" content="https://adieu.up.railway.app/">
+    <meta name="twitter:title" content="Association des Développeurs Informatiques Étrangers Unis">
+    <meta name="twitter:description" content="Communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences dans un environnement anglophone">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    
+    <!-- PAGE TITLE -->
+    <title>ADIEU: Association des Développeurs 
+        Informatiques Étrangers Unis</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <!-- LINK FOR CLOSING THE NAVBAR WHEN CLICKING OUTSIDE IT -->
+    <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-lg"> 
+        <!-- Possible to use sticky-top, but just using this one for compatibility -->
+        <div class="container-md">
+            <a href="/" class="navbar-brand"><span class="display-3 fw-bold">ADIEU</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center gap-3 gap-md-0">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link active" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contactez-Nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="calendrier.html" class="nav-link">Prochains Événements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- INTRO SECTION  -->  
+    <section id="home" class="section intro-section my-1 my-md-3">
+        <div class="container-md my-2">
+            <!-- FIRST ROW -->
+            <div class="row align-items-center text-center">
+                <div class="col">
+                    <h1 class="display-1 fw-bold">
+                      Association des Développeurs 
+                      Informatiques Étrangers Unis
+                    </h1>
+                </div>
+            </div>
+            <!-- SECOND ROW -->
+            <div class="row align-items-center mt-md-5">
+                <div class="col-lg-8 px-5 px-md-0">
+                    <p class="display-5 section-description">
+                        Bienvenue sur le site web de l'Association des Développeurs Informatiques Étrangers Unis, une communauté dédiée aux programmeurs étrangers passionnés d'intelligence artificielle qui cherchent à améliorer leurs compétences et à partager leurs connaissances dans un environnement anglophone.
+                    </p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0 text-end">
+                    <div class="icon-box">
+                        <img src="/assets/images/screen.png" alt="Screen image" class="img-fluid image-content">
+                        <a href="" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span>
+                                <i class="fa-regular fa-circle-play"></i>
+                            </span>
+                            <span class="wave-animation"></span>
+                            <span class="wave-animation wave-animation--2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD ROW -->
+            <div class="row align-items-center mt-5 pt-3">
+                <div class="col px-4 px-md-5">
+                    <p class="display-6 section-description">
+                        Nous croyons que l'écriture de code propre et efficace est essentielle pour construire des modèles d'IA de qualité supérieure.
+                    </p>
+                    <p class="display-6 section-description">
+                        C'est pourquoi nous refusons catégoriquement d'utiliser des commentaires de code en français dans notre communauté.
+                    </p>
+                    <p class="display-6 section-description">
+                        Rejoignez-nous pour des événements, des discussions en ligne et des projets en groupe qui vous aideront à devenir un meilleur développeur d'IA tout en naviguant dans les défis de développer en tant qu'étranger en France.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="container-md py-5">
+            <div class="row align-items-center mt-md-3">
+                <!-- FIRST COLUMN -->
+                <div class="col-md-4 d-none d-md-inline">
+                    <img src="assets/images/email.png" alt="Email image"
+                    class="img-fluid image-content">
+                </div>
+                <!-- SECOND COLUMN -->
+                <div class="col-md-8 px-lg-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>
+                                Rejoignez-nous
+                            </h2>
+                            <p class="display-5 section-description">
+                                    Dans notre association, nos membres partagent leurs astuces pour mieux coder et avoir un environnement de travail sain. La plupart d'entre eux ont multiplié par 10 leur productivité et cherchent maintenant à aider les autres
+                            </p>
+                        </div>
+                        <div class="row mt-3">
+                            <a href="contact.html" class="btn btn-primary btn-lg btn-block">
+                                Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROCHAIN RENDEZ VOUS  -->
+    <section id="next-time-we-see-each-other" class="section">
+        <div class="container-md py-5 mt-4">
+            <div class="row mb-2  mt-md-5">
+                <h2>Prochain rendez-vous</h2>
+            </div>
+            <div class="row text-center py-4 next-date rounded-4 section-description">
+                <span class="display-5">
+                    <a href="calendrier.html">Mercredi 1 - Février</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- IMAGES -->
+    <section id="image-carousel" class="section pt-md-5">
+        <div class="container-md py-5 text-center mt-2">
+            <h2 class="display-4 my-md-5">Photos de notre dernière rencontre</h2>
+            <div id="carouselPhotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-wrap="true"
+            data-bs-pause="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/800/400?random=1&grayscale" class="d-block w-100" alt="Gilfoyle eating all the chips">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/800/400?random=2&grayscale" class="d-block w-100" alt="Gilfoyle creating an indestructible AI">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/800/400?random=3&grayscale" class="d-block w-100" alt="Gilfoyle destroying the world">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-wrapper" class="container-fluid footer-container">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-4 ps-0 ps-lg-5">
+                        <span class="display-5 fw-bold text-uppercase">
+                            ADIEU
+                        </span>
+                        <p>
+                            Association des Développeurs 
+                            Informatiques Étrangers Unis
+                        </p>
+                    </div>
+                    <div class="col-lg-8 share">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://adieu.up.railway.app/" target="_blank">Share on Facebook</a>
+                        <a href="https://twitter.com/intent/tweet?url=https://adieu.up.railway.app/&text=Check%20out%20this%20website!" target="_blank">Share on Twitter</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://adieu.up.railway.app/" target="_blank">Share on LinkedIn</a>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="row copyright text-center align-items-center">
+                    <div class="col">
+                        © 2023 Copyright:
+                        <a class="text-white" href="mailto:gustavorossich@gmail.com">
+                            Gustavo Rossich
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="assets/glightbox/js/glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
