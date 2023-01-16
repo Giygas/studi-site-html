@@ -9,6 +9,8 @@ html, body {
     min-height: 100vh;
     color: $gray-500;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
   
 /* Nice scrollbar */
