@@ -8,3 +8,10 @@ const lightbox = GLightbox({
   'autoplayVideos': true,
   'touchNavigation': true
 })
+
+// WAIT FOR CSS TO LOAD
+var stylesheet = document.getElementById("stylesheet")
+
+stylesheet.onload = function() {
+  document.getElementById("page").style.display = "block"
+}
