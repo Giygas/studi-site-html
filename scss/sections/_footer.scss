@@ -2,7 +2,9 @@
 @use '../components/mixins' as mix;
 
 footer {
+  margin-top: auto;
   color: c.$gray-200;
+  margin-bottom: 0;
   
   a {
     text-decoration: none;
@@ -35,6 +37,17 @@ footer {
   .copyright {
     background-color: rgba(0, 0, 0, 0.2);
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+      color: c.$gray-500;
+      
+      &:hover{
+        color: c.$light-blue-300;
+      }
+    }
   }
   
 }

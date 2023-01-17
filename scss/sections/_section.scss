@@ -79,7 +79,6 @@
     
     // CALENDAR RELATED
     &-calendar {
-        min-height: 100vh;
         
         button {
             
@@ -106,7 +105,9 @@
     }
     
     &-contact {
-        min-height: 100vh;
+        .contact-form {
+            padding: 4vh 5vh;
+        }
         
         // This one is better to start seeing the full form
         // page in large screens
@@ -117,11 +118,12 @@
                 -webkit-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
                 -moz-box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
                 box-shadow: 0px 0px 51px -14px rgba(77,198,199,0.68);
-                padding: 5vh 12vh; 
-                margin: 0 20vh;
+                padding: 5vh 5vh; 
+                margin: 0 5vh;
             }
             
         }
+        
     }
     
 }

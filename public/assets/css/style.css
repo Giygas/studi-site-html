@@ -19090,6 +19090,8 @@ html, body {
   min-height: 100vh;
   color: #adb5bd;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Nice scrollbar */
@@ -19173,9 +19175,6 @@ html, body {
 .section .next-date {
   background-color: rgba(0, 48, 92, 0.4666666667);
 }
-.section-calendar {
-  min-height: 100vh;
-}
 .section-calendar button div span {
   font-weight: 300;
 }
@@ -19186,8 +19185,8 @@ html, body {
   font-size: 1.5rem;
   margin-bottom: 4vh;
 }
-.section-contact {
-  min-height: 100vh;
+.section-contact .contact-form {
+  padding: 4vh 5vh;
 }
 @media (min-width: 992px) {
   .section-contact .contact-form {
@@ -19196,13 +19195,15 @@ html, body {
     -webkit-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
     -moz-box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
     box-shadow: 0px 0px 51px -14px rgba(77, 198, 199, 0.68);
-    padding: 5vh 12vh;
-    margin: 0 20vh;
+    padding: 5vh 5vh;
+    margin: 0 5vh;
   }
 }
 
 footer {
+  margin-top: auto;
   color: #e9ecef;
+  margin-bottom: 0;
 }
 footer a {
   text-decoration: none;
@@ -19229,6 +19230,15 @@ footer .footer-container .share {
 footer .copyright {
   background-color: rgba(0, 0, 0, 0.2);
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyright a {
+  color: #adb5bd;
+}
+footer .copyright a:hover {
+  color: #07F7CC;
 }
 
 @media (max-width: 530px) {
