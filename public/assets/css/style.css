@@ -19199,11 +19199,6 @@ html, body {
     margin: 0 5vh;
   }
 }
-.section .carousel-item {
-  min-height: 50vw;
-  min-width: 20vw;
-  text-align: center;
-}
 
 footer {
   margin-top: auto;
