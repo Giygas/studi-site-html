@@ -19199,10 +19199,6 @@ html, body {
     margin: 0 5vh;
   }
 }
-.section .carousel-item img {
-  max-height: 45vw;
-}
-
 footer {
   margin-top: auto;
   color: #e9ecef;
