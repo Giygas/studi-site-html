@@ -1,3 +1,4 @@
+import '../glightbox/js/glightbox.min.js'
 // Glightbox options
 const lightbox = GLightbox({
   'href': 'https://www.youtube.com/watch?v=qL-Qe7bJopY',
@@ -6,4 +7,4 @@ const lightbox = GLightbox({
   'width': 900,
   'autoplayVideos': true,
   'touchNavigation': true
-});
+})
